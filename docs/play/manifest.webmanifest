@@ -1,0 +1,11 @@
+{
+  "name": "Carrier — carry a message to someone who has no network",
+  "short_name": "Carrier",
+  "description": "Compose a message, carry it as a file, and keep a chain of who handed it on. It does not promise delivery.",
+  "start_url": "./index.html", "scope": "./", "display": "standalone",
+  "background_color": "#f6f5f2", "theme_color": "#101418", "lang": "en-IN",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

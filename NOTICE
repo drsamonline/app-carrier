@@ -1,0 +1,35 @@
+NOTICE
+======
+
+Carrier — https://github.com/drsamonline/app-carrier
+Copyright 2026 Dr Sohil Momin. Licensed under PolyForm Noncommercial 1.0.0 (see LICENSE).
+
+Third-party components
+----------------------
+
+None. Carrier has no third-party dependency and no CDN.
+
+Vendored from this project's own kits (same licence, same author), copied verbatim on 26/11/2026:
+
+- web-kit 0.1.0 — docs/play/web-kit.js — the offline shell, storage helpers and PWA registration
+- export-kit 1.0.0 — docs/play/export-kit.js — Blob download, used to carry the message out
+
+Neither kit is modified. Neither makes a network request.
+
+The channel
+-----------
+
+There is no Bluetooth, no cable API and no QR camera in this app. The channel is a JSON file the person
+carries themselves — on a cable, a USB stick, or by opening it on the other device. The spec's
+"auto-selects the best channel" is therefore not built: there is one channel, and it is stated rather than
+invented.
+
+What is built: the chain of hand-offs, the hash that catches an edited body, and the refusal to claim
+delivery.
+
+What this app does not promise
+------------------------------
+
+A hand-off records that someone took the message. It does not record that it arrived. Those are different
+claims and only the first is knowable here, so the app says "does not promise it arrived" at the moment of
+every hand-off, and the received view calls itself a record of hand-offs rather than a delivery receipt.
